@@ -1,0 +1,420 @@
+/*
+* Main Stylesheet for all webpages within this project (custom default)
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    font: normal 1em 'Work Sans', sans-serif;
+    background-color: #faf2e4;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(216, 122, 0);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1.5rem;
+    padding: 3rem
+}
+
+h2 {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1rem;
+    color: rgb(216, 141, 43);
+}
+
+p {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-family: 'Source Sans Pro' sans-serif;
+}
+
+hr {
+    margin-left: 9em;
+    margin-right: 9em;
+}
+
+
+header {
+    background-color: coral;
+}
+
+header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 20%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#goose {
+    border-radius: 60% 90%;
+    width: 40%;
+    height: 40%;
+}
+
+/* ------------------------- NAVIGATION BAR ------------------------- */
+nav {
+    float: right;
+
+}
+
+
+nav ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 16px;
+
+    position: relative;
+    
+}
+
+nav a {
+    font-family: 'Work Sans' sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #faf2e4;
+  }
+  
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background-color: darkturquoise;
+
+position: absolute;
+top: 0;
+width: 0%;
+
+transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+width: 100%;
+}
+
+.drop-down-bar {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    padding-right: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------- BANNERS ------------------------- */
+
+.banners {
+    padding: 4rem;
+}
+
+.banners div .banner-list {
+    display: flex;
+}
+
+/* -------------------| COFFEE BANNER |------------------- */
+.banners div .banner-list #-coffee-banner{
+    display: block;
+    overflow: hidden;
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin: auto;
+}
+
+/* Resize */
+.banners div .banner-list #-coffee-banner img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+
+}
+
+/* -------------------| PARTY BANNER |------------------- */
+.banners div .banner-list #-party-banner{
+    display: block;
+    overflow: hidden;
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin: auto;
+}
+
+/* Resize */
+.banners div .banner-list #-party-banner img{
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+
+
+}
+
+/* -------------------| COFFEE SHOP BANNER |------------------- */
+
+.banners div .banner-list #-coffee-shop-banner{
+    border: 0;
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin: auto;
+}
+
+/* Resize */
+.banners div .banner-list #-coffee-shop-banner img{
+    border: 0;
+
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin-left: -90px;
+    padding-left: 40px;
+    
+    object-fit: cover;
+    overflow: hidden;
+
+    
+
+}
+
+/* ------------------------- FOOTER ------------------------- */
+
+.-footer, .push {
+
+    background-color: coral;
+    border-top: 1px solid gray;
+    padding: 30px 0;
+    flex-shrink: 0;
+}
+
+
+
+.copyright {
+
+    font-size: 12px;
+    line-height: 30px;
+    
+    margin-top: 2rem;
+
+    display:flex;
+    justify-content: center;
+}
+
+.i-made-it {
+    font-size: 12px;
+    line-height: 30px;
+
+    display:flex;
+    justify-content: center;
+}
+
+/* ------------------------- FORM ------------------------- */
+
+.-footer .container-center-text {
+    overflow: hidden;
+    
+    
+}
+
+.-footer .container-center-text h2 {
+    font-family: Tahoma, sans-serif;
+
+}
+
+
+.-footer {
+    display:flex;
+    justify-content: center;
+}
+
+.-footer .container-center-text  {
+    display: inline-block;
+}
+
+.-footer .container-center-text .subscribe-form {
+    padding: 2rem;
+    display: flex;
+    position: relative;
+}
+
+/* -------------------| NEWSLETTER INPUT BARS |------------------- */
+
+.control {
+    height: 4rem;  
+    margin-left: 2.1rem;
+}
+
+/* INPUT */
+.control-form {
+    /* margin: 60px; */
+    /* padding: 0.51rem; */
+    padding: 9px;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 500px;
+    width: 400px;
+
+
+
+    border: 1px dimgray solid;
+    box-sizing: border-box;
+    outline: none;
+
+    transition: 0.5s;
+
+    padding-left: 3rem;
+    
+    
+}
+
+.control-form:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.control i{
+    position: absolute;
+    
+    background-color: dimgray;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 500px 4px 4px 500px;
+    padding: 9px 10px; 
+    /* margin-right: 1px; */
+    display: inline-block;
+    margin-left: -25rem;
+    transition: 0.5s;
+}
+
+
+.control input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+}
+
+/* input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  } */
+
+  /* .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 11px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  } */
+
+
+/* BUTTOM  */
+
+.buttom-submit {
+    border-radius: 500px;
+    padding: 0.51rem 2rem;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #62666b;
+    color: whitesmoke;
+    border: 0;
+
+}
+
+.buttom-submit span {
+    cursor: pointer;
+
+}
+
+.buttom-submit spam:hover {
+    transition: 0.6s;
+}
+
+.buttom-submit spam:after {
+    
+}
+
+/* -------------------| SOCIAL LINKS |------------------- */
+
+.-footer .container-center-text .social-links {
+
+    list-style: none;
+    
+    display:flex;
+    justify-content: center;
+    
+    
+    
+}
+
+
+.-footer .container-center-text .social-links li {
+    display: inline-block;
+    margin-left: 2rem;
+
+    position: relative;
+    
+    font-size: 4.5rem;
+
+    
+    
+    
+}
+
+.-footer .container-center-text .social-links a{
+    color: dimgray;
+    text-decoration: none;
+}
+
